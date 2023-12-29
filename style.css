@@ -1,0 +1,75 @@
+*{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+html{scroll-behavior: smooth;}
+body{background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);}
+.container-fluid{margin-top: 20vh;}
+.text-1 h1{font-size: 4rem;}
+.text-1 p{line-height: 35px;}
+.text-1{animation: ww 0.6s ease alternate;}
+nav{animation: w 0.3s ease alternate;}
+.image-area{animation: www 1s ease alternate;}
+.navbar-toggler{transform: rotate(90deg);}
+.span{color: white;font-size: 3rem;}
+.gif{text-align: center; margin-top: 5vh;}
+.gif img {width: 100px;}
+.nav-link::after{
+    content: '';
+    transition: 0.8s ease;
+    color: #171717;
+    border: 2px solid;
+    display: block;
+    width: 0%;
+    opacity: 0;
+    margin-top: 3px;
+}
+.nav-link:hover::after{
+    content: '';
+    width: 105%;
+    opacity: 1;
+}
+/* ABOUT US  */
+#aboutus{margin-top: 50dvh;}
+#aboutus .row{gap: 3rem; margin-top: 10vh;} 
+/* OUR WORK  */
+#third-section{margin-top: 34vh;}
+#third-section .row{gap: 2rem;}
+#third-section .row .col-md-3{transition: 0.4s ease;}
+#third-section .row .col-md-3:hover{transform: scale(1.1); cursor: pointer;}
+/* FORM  */
+#section-four{margin-top: 20vh;}
+/* ANIMATION */
+@keyframes w {
+    0%{
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+@keyframes ww {
+    0%{
+        opacity: 0;
+        transform: translatex(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+@keyframes www {
+    0%{
+        opacity: 0;
+        transform: rotate(30deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+/* MEDIA  */
+@media (max-width:991px){
+    nav{
+        background-color: #171717;
+    }
+}
